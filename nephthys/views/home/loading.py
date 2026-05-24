@@ -16,7 +16,7 @@ def get_loading_view(home_type: str):
             },
             {
                 "type": "image",
-                "image_url": f"{env.base_url}/public/loading.gif",
+                "image_url": "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
                 "alt_text": "Loading...",
             },
         ],
