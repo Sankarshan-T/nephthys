@@ -1,7 +1,7 @@
 import logging
 from base64 import b64encode
 from os import environ
-from os import uname
+import platform
 from uuid import uuid4
 
 from opentelemetry._logs import set_logger_provider
@@ -47,7 +47,7 @@ def setup_otel_logging():
         "service.name": env.otel_service_name,
         "service.instance.id": uuid4().hex,
         "deployment.environment": env.environment,
-        "host.name": uname().nodename,
+        "host.name": platform.uname().nodename,
     }
     commit_hash = environ.get("SOURCE_COMMIT")
     container_name = environ.get("COOLIFY_CONTAINER_NAME")

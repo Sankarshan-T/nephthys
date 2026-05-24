@@ -15,6 +15,7 @@ from nephthys.transcripts.transcripts.midnight import Midnight
 from nephthys.transcripts.transcripts.nest import Nest
 from nephthys.transcripts.transcripts.stardance_ambassadors import StardanceAmbassadors
 from nephthys.transcripts.transcripts.stasis import Stasis
+from nephthys.transcripts.transcripts.alchemize import Alchemize
 from nephthys.transcripts.transcripts.summer_of_making import SummerOfMaking
 
 transcripts: List[Type[Transcript]] = [
@@ -32,4 +33,5 @@ transcripts: List[Type[Transcript]] = [
     Help,
     Beest,
     StardanceAmbassadors,
+    Alchemize,
 ]
